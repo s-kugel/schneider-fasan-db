@@ -1,0 +1,17 @@
+datasources:
+  fasan:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    dialect: mysql
+    host: ${FASAN_DB_HOST:`127.0.0.1`}
+    port: ${FASAN_DB_PORT:`23306`}
+    db-name: ${FASAN_DB_NAME:`fasan_db`}
+    url: jdbc:mysql://${datasources.fasan.host}:${datasources.fasan.port}/${datasources.fasan.db-name}
+    username: ${FASAN_DB_USER:`app`}
+    password: ${FASAN_DB_PASSWORD:`lyFGVB31gWkYcRLO`}
+    auto-commit: false
+    pool-name: fasan-db-pool
+    # connection-timeout:
+    # idle-timeout:
+    # minimum-idle:
+    # maximum-pool-size:
+    # max-lifetime:

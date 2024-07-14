@@ -1,0 +1,23 @@
+[versions]
+flyway = "10.15.2"
+spotless = "6.25.0"
+mysql = "8.4.0"
+shadow = "8.1.1"
+micronaut = "4.4.0"
+lombok = "1.18.34"
+ulid = "8.3.0"
+guava = "33.2.1-jre"
+
+[plugins]
+flyway = { id = "org.flywaydb.flyway", version.ref = "flyway" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+micronaut-application = { id = "io.micronaut.application", version.ref = "micronaut" }
+micronaut-aot = { id = "io.micronaut.aot", version.ref = "micronaut" }
+
+[libraries]
+mysql = { module = "com.mysql:mysql-connector-j", version.ref = "mysql" }
+flyway-mysql = { module = "org.flywaydb:flyway-mysql", version.ref = "flyway" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+ulid = { module = "de.huxhorn.sulky:de.huxhorn.sulky.ulid", version.ref = "ulid" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
